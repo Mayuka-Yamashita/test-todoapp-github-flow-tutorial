@@ -13,8 +13,10 @@ $(document).on("change", "input[type=checkbox]", function() {
     //この(this)がチェックだったら
     if($(this).is(":checked")) {
         $(this).parent().css("text-decoration", "line-through");
+        $(this).parent().css("color", "#ccc");
     } else {
         //cssを取り除けばよい
         $(this).parent().css("text-decoration", "none");
+        $(this).parent().css("color", "#000");
     }
 })
